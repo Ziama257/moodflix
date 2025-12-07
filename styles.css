@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    text-align: center;
+}
+header{
+    text-align: left;
+    color: white;
+    background-color: black;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 50px;
+}
+header h1, h2 {
+    margin: 0px;
+}
+
+header h2{
+    font-size: small;
+    margin-left: 25px;
+}
+
+#selection {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+#tone-presets, #custom-mood-builder{
+    width: 50%;
+    padding: 20px;
+    background-color: lightgray;
+    border: 2px, solid, black;
+    border-top: 0px;
+}
+
+
+
+#tone-preset-swatches {
+    margin-top: 10px;
+}
+
+#color-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#color-picker-container button{
+    background-color: white;
+    border: 2px, solid, black;
+    height: 34px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.sp-replacer.sp-light{
+    border: 2px, solid, black;
+    background-color: white;
+}
+#add-color{
+    margin-top: 15px;
+}
+.preset-group, #custom-mood-swatches {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.custom-swatch-container{
+    margin-top: 11px;
+}
+
+.preset-label {
+    width: 120px;
+    font-weight: bold;
+}
+
+.swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+.swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.swatch:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.preset-group, #custom-mood-swatches {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.preset-group:hover, #custom-mood-swatches:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#favorites {
+    width: 50%;
+    background-color: lightgray;
+    margin-top: 10px;
+}
+
+#favorites div{
+    margin-top: 15px;
+    border: 2px, solid, black;
+}
+
+#favorites-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#results, #favorites-section {
+    margin-top: 40px;
+}
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#results-carousel {
+    margin-top: 20px;
+    min-height: 600px; 
+    overflow: hidden; 
+}
+
+
+
+.movie-card {
+    text-align: center;
+    width: 200px;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.heart {
+    cursor: pointer;
+    font-size: 22px;
+    color: #888;
+}
+
+.heart.active {
+    color: red;
+}
+.custom-swatch-container {
+    display: none;
+}
